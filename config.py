@@ -36,9 +36,9 @@ ADMINS = int(environ.get("ADMINS", "1892771262"))
 
 # Database Information
 CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://Mnclone:Mnclone@cluster0.er3noev.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-CDB_NAME = environ.get("CDB_NAME", "Mnclone")
+CDB_NAME = environ.get("CDB_NAME", "cluster0")
 DB_URI = environ.get("DB_URI", " mongodb+srv://Mnt:Mnt@cluster0.jaqk7ga.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DB_NAME = environ.get("DB_NAME", "Mnt")
+DB_NAME = environ.get("DB_NAME", "cluster0")
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
