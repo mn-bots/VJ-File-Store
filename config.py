@@ -30,6 +30,9 @@ def is_enabled(value, default):
 # Ask Doubt on telegram @KingVJ01
       
 # Owner Information
+AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '').split()] # give channel id with seperate space. Ex : ('-10073828 -102782829 -1007282828')
+
+
 API_ID = int(environ.get("API_ID", "22980696"))
 API_HASH = environ.get("API_HASH", "2b653cb53821a82097efaba6732f5d75")
 ADMINS = int(environ.get("ADMINS", "1892771262"))
@@ -50,8 +53,8 @@ BOT_USERNAME = environ.get("BOT_USERNAME", "MKN_FILE_STORE_BOT") # your bot user
 PICS = (environ.get('PICS', 'https://graph.org/file/925fbd275ae3ce711961b.jpg https://graph.org/file/80df1f2f74e5b44620899.jpg')).split() # Bot Start Picture
 
 # Auto Delete Information
-AUTO_DELETE = int(environ.get("AUTO_DELETE", "10")) # Time in Minutes
-AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "600")) # Time in Seconds
+AUTO_DELETE = int(environ.get("AUTO_DELETE", "5")) # Time in Minutes
+AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "300")) # Time in Seconds
 
 # Channel Information
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002056291438"))
